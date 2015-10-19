@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Questions Prompted by Student Mistakes, Pt. 1</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+	<script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">Zachary Sarver </a></h1>
+                <nav><ul>
+    
+                        <li><a href="/pages/about.html">About</a></li>
+    
+                        <li><a href="/pages/cv.html">CV</a></li>
+                    <li class="active"><a href="/category/blog.html">blog</a></li>
+                </ul>
+                </nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/drafts/questions-from-mistakes-1.html" rel="bookmark"
+           title="Permalink to Questions Prompted by Student Mistakes, Pt. 1">Questions Prompted by Student Mistakes, Pt. 1</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+        <span>Thu 15 October 2015</span>
+<span>| tags: <a href="/tag/math.html">math</a><a href="/tag/questions.html">questions</a></span>
+</footer><!-- /.post-info -->      <p>I'm introducing a new series in this post, called &quot;Questions Prompted by Student
+Mistakes.&quot; I'm deliberately going to write these in more detail that is
+necessary so that non-mathematicians can read them.</p>
+<p>On a quiz I graded recently, I saw the following:</p>
+\[ \cos\left(\frac{2}{x}\right) = \frac{\cos 2}{\cos x} = \frac{2}{x} \]<p>because <span class="raw-latex">\( \cos \)</span> totally works like that. So this prompted the
+question, is there a function <span class="raw-latex">\( f: \mathbb{R} \to \mathbb{R} \)</span>
+such that <span class="raw-latex">\( \frac{f(a)}{f(b)} = \frac{a}{b} \)</span> for all real
+numbers <span class="raw-latex">\( a,b \)</span> with <span class="raw-latex">\( b \neq 0 \)</span>?</p>
+<p>Clearly we can do this for nontrivial linear functions. Every nontrivial linear
+function <span class="raw-latex">\( f: \mathbb{R} \to \mathbb{R} \)</span> is of the form
+<span class="raw-latex">\( f(x) = \alpha x \)</span> where <span class="raw-latex">\( \alpha \)</span> is your
+favorite non-zero constant. We have that</p>
+\[ \frac{f(a)}{f(b)} = \frac{\alpha a}{\alpha b} = \frac{a}{b} \]<p>So the question is, then, are linear functions the only ones for which this
+property holds? Click the button below to see the answer.</p>
+<div id="spoiler" style="display:none">
+      Yes. Suppose \( \frac{f(a)}{f(b)} = \frac{a}{b} \). Then \( f(a) =
+      \frac{a}{b}\cdot f(b) \), so \( f(a) \) must be a scalar multiple of \(
+      f(b) \) for each pair of \( a \) and \( b \). In particular, then, for
+      \( b = 1 \) we have that \( f(a) = \frac{a}{1}\cdot f(1) = af(1)
+      \). Thus the value of \( f(1) \) determines the entire function. Let \(
+      f(1) = \alpha \), so then \( f(a) = \alpha a \), and \( f \) is linear.
+</div>
+<button title="Click to show/hide content" type="button"
+onclick="if(document.getElementById('spoiler') .style.display=='none')
+{document.getElementById('spoiler')
+.style.display=''}else{document.getElementById('spoiler')
+.style.display='none'}">Show/Hide Solution</button>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                            <li><a href="http://www.auburn.edu/">Auburn University</a></li>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="https://www.facebook.com/VyseofArcadia">Zachary Sarver on Facebook</a></li>
+                            <li><a href="https://twitter.com/VyseofArcadia">@VyseofArcadia on Twitter</a></li>
+                            <li><a href="https://plus.google.com/u/0/107346758370734324176/posts">Zachary Sarver on Google+</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <p>Powered by <a href="http://getpelican.com/">Pelican</a>. Theme <a href="https://github.com/blueicefield/pelican-blueidea/">blueidea</a>, inspired by the default theme.</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
